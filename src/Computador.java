@@ -6,6 +6,18 @@ public class Computador {
     public int qntDisco;
     public boolean isLigado;
 
+    public Computador(String modeloProcessador, String modeloPlacaMae, int nucleosProcessador, int qntRAM, int qntDisco){
+        this.modeloProcessador = modeloProcessador;
+        this.modeloPlacaMae = modeloPlacaMae;
+        this.nucleosProcessador = nucleosProcessador;
+        this.qntRAM = qntRAM;
+        this.qntDisco = qntDisco;
+    }
+
+    public Computador(){
+        this("","",0,0,0);
+    }
+
     public void ligar(){
         isLigado = true;
         System.out.println("Computador ligado!");

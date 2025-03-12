@@ -12,6 +12,28 @@ public class Jogador {
     public int atributoVelocidade;
     public boolean isVivo;
 
+    public Jogador(String nome, String classe, String genero, String raca){
+        this.nome = nome;
+        this.classe = classe;
+        this.genero = genero;
+        this.raca = raca;
+        this.isVivo = true;
+        this.vida = 100;
+        this.atributoAtaque = 10;
+        this.atributoDefesa = 10;
+        this.atributoVelocidade = 10;
+    }
+
+    public Jogador(){
+        this("Player", "Guerreiro", "N", "Humano");
+        this.isVivo = true;
+        this.vida = 100;
+        this.atributoAtaque = 10;
+        this.atributoDefesa = 10;
+        this.atributoVelocidade = 10;
+    }
+
+
     public void atacar() {
         System.out.println( nome + " realizou um ataque e causou " + atributoAtaque + " de dano");
     }

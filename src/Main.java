@@ -1,10 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        Jogador jogador1 = new Jogador();
-        jogador1.nome = "Tekaxis";
-        jogador1.classe = "Mago";
-        jogador1.genero = "Masculino";
-        jogador1.raca = "Elfo";
+        Jogador jogador1 = new Jogador("Tekaxis","Mago","Masculino","Elfo");
+        Jogador jogador2 = new Jogador();
+
         jogador1.vida = 100;
         jogador1.nivel = 1;
         jogador1.atributoAtaque = 10;
@@ -19,10 +17,8 @@ public class Main {
         System.out.println("\n");
 
 
-        Microondas microondas1 = new Microondas();
-        microondas1.marca = "Eletrolux";
-        microondas1.tipo = "Embutir";
-        microondas1.potencia = 100;
+        Microondas microondas1 = new Microondas("Eletrolux", "Embutir", 100);
+        Microondas microondas2 = new Microondas();
 
         microondas1.definirTempo(10);
         microondas1.cancelar();
@@ -30,9 +26,8 @@ public class Main {
         System.out.println("\n");
 
 
-        Conta conta1 = new Conta();
-        conta1.nome = "Carlos Eduardo Wille Martins";
-        conta1.numeroDeTelefone = "41995738010";
+        Conta conta1 = new Conta("Carlos", "41995738010", 0, 1000);
+        Conta conta2 = new Conta();
 
         conta1.consultarSaldo();
         conta1.depositar(100);
@@ -42,19 +37,8 @@ public class Main {
         System.out.println("\n");
 
 
-        Computador computador1 = new Computador();
-        computador1.modeloProcessador = "Intel Core i7 14700K";
-        computador1.modeloPlacaMae = "Z790";
-        computador1.nucleosProcessador = 8;
-        computador1.qntDisco = 1000;
-        computador1.qntRAM = 32;
-
+        Computador computador1 = new Computador("Intel Core i7 14700K","Z790",8,32,1000);
         Computador computador2 = new Computador();
-        computador2.modeloProcessador = "Intel Core i3 520";
-        computador2.modeloPlacaMae = "HM55";
-        computador2.nucleosProcessador = 2;
-        computador2.qntDisco = 10;
-        computador2.qntRAM = 2;
 
         computador1.verificarLolzinho();
         computador1.ligar();
@@ -71,12 +55,8 @@ public class Main {
         System.out.println("\n");
 
 
-        Carro carro1 = new Carro();
-        carro1.marca = "Fiat";
-        carro1.modelo = "Uno";
-        carro1.cor = "Branco";
-        carro1.qtdPortas = 4;
-        carro1.ano = 2002;
+        Carro carro1 = new Carro("Fiat", "Uno", "Branco", 4, 2002);
+        Carro carro2 = new Carro();
 
         carro1.ligar();
         carro1.acelerar(100);

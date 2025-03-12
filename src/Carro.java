@@ -6,6 +6,19 @@ public class Carro {
     public int ano;
     public int velocidadeAtual;
 
+    public Carro(String marca, String modelo, String cor, int qtdPortas, int ano){
+        this.marca = marca;
+        this.modelo = modelo;
+        this.cor = cor;
+        this.qtdPortas = qtdPortas;
+        this.ano = ano;
+    }
+
+    public Carro(){
+        this("","","",0,0);
+        this.velocidadeAtual = 0;
+    }
+
     public void ligar(){
         System.out.println("Ligando o carro");
     }

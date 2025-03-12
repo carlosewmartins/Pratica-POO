@@ -4,6 +4,15 @@ public class Microondas {
     public int potencia;
     public boolean ligado;
 
+    public Microondas(String marca, String tipo, int potencia){
+        this.marca = marca;
+        this.tipo = tipo;
+        this.potencia = potencia;
+    }
+
+    public Microondas(){
+        this("","",0);
+    }
     public void cancelar(){
         if (ligado == true){
             System.out.println("Desligando microondas - Timer zerado!");

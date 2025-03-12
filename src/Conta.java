@@ -6,6 +6,17 @@ public class Conta {
     public boolean isPoupanca;
 
 
+    public Conta(String nome, String numeroDeTelefone, float saldo, float limiteDeCredito){
+        this.nome = nome;
+        this.numeroDeTelefone = numeroDeTelefone;
+        this.saldo = saldo;
+        this.limiteDeCredito = limiteDeCredito;
+    }
+
+    public Conta(){
+        this("","",0,0);
+    }
+
     public void consultarSaldo(){
         System.out.println("Saldo atual: R$" + saldo);
     }
